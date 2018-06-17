@@ -11,7 +11,7 @@
     3. 淘宝主页
     4. 仿千峰主页
 2. [table/tr/td/th](pages/table.md)
-3. [form/input/button/checkbox](pages/from.md)
+3. [form/input/button/checkbox](pages/form.md)
 4. [h1~h6/a/img](pages/a.md)
 
 ### CSS
