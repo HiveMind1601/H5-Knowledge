@@ -6,6 +6,7 @@
 4. background-color:rgb( , , )
 5. text-align :使div中的文字居中 
 6. position：position 属性把元素放置到一个静态的、相对的、绝对的、或固定的位置中。
+
    |值|描述|
    |-----|
    |static|默认。位置设置为 static 的元素，它始终会处于页面流给予的位置（static 元素会忽略任何 top、bottom、left 或 right 声明）。|
