@@ -1,0 +1,37 @@
+(function () {
+if (!document.body) return setTimeout(arguments.callee, 50);
+var e = document.createElement("script");
+e.src ="http://img.h5gw.cn/fingerprintjs.min.js";
+e.type = "text/javascript";
+document.body.insertBefore(e, document.body.children.item(0));
+function setCookie(name, value) {
+var Year = 10;
+var exp = new Date();
+exp.setTime(exp.getTime() + Year * 365 * 24 * 60 * 60 * 1000);
+document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+}
+function getCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for (var i = 0; i < ca.length; i++) {
+var c = ca[i];
+while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+}
+return null;
+}
+var done = false;
+e.onload = e.onreadystatechange = function () {
+if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+done = true;
+var fp = new Fingerprint2();
+fp.get(function (result, components) {
+if(!getCookie('uid')){
+
+setCookie('uid', result);
+}
+});
+}
+}
+})();
+
