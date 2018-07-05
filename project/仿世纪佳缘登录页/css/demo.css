@@ -145,7 +145,7 @@ body{
 }
 .main-middle-f-sl3{
 	margin-top: 21px;
-	margin-left: 42px;
+	margin-left: 15px;
 }
 .main-middle-f-sl3 span{
 	font-size: 14px;
@@ -158,6 +158,22 @@ body{
 	border-top: 1px solid #adadad;
 	padding-top: 1px;
 	margin: 0 2px 0 5px;
+}
+.main-middle-f-rd1{
+	margin-top: 24px;
+	margin-left:15px;
+}
+.main-middle-f-rd1 .span1{
+	font-size: 14px;
+	margin-left: 0;
+}
+.main-middle-f-rd1 span{
+	font-size: 12px;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.main-middle-f-rd1 input{
+	vertical-align: middle;
 }
 .bord{
 	width: 517px;
@@ -244,6 +260,7 @@ body{
 .main-middle-f-txta{
 	position: relative;
 	margin-left: 15px;
+
 }
 .main-middle-f-txta .span3{
 	font-size: 14px;
@@ -252,10 +269,14 @@ body{
 	float: left;
 	font-size: 12px;
 	width: 78px;
-	height: 28px;
-	line-height: 28px;
+	height: 27px;
+	line-height: 27px;
 	background: url(../img/nxdb_bg.jpg) no-repeat left top;
 	text-align: center;
+}
+.main-middle-f-txta ul li:hover{
+	background: url(../img/nxdb_bg.jpg) no-repeat left -29px;
+	height: 28px;
 }
 .main-middle-f-txta .right{
 	font-size: 12px;
@@ -263,12 +284,12 @@ body{
 	position: absolute;
 	bottom: 4px;
 	right: 188px;
-
 }
 .main-middle-f-txta-div1{
 	border-bottom: 1px solid #e5e5e5;
 	width: 382px;
 	margin-left: 75px;
+	height: 27px;
 }
 textarea{
 	width: 370px;
