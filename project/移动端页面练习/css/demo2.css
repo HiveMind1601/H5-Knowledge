@@ -1,0 +1,122 @@
+html{
+	height: 100%;
+	font-size: 100px;
+}
+body{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+/*头部*/
+header{
+	background: #fe2641;
+	height: 0.96rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #b2b2b2;
+}
+header ul{
+	display: flex;
+	justify-content: space-between;
+} 
+header ul li{
+	display: flex;
+	align-items: center;
+	height: 0.95rem;
+}
+header ul a{
+	color: #fff;
+	font-size: 0.35rem;
+}
+header ul li:nth-of-type(3) a{
+	margin-right: 0.33rem;
+}
+header ul li:nth-of-type(3) a i{
+	font-size: 0.50rem;
+}
+/*主体*/
+section{
+	flex: 1;
+	overflow: auto;
+	background: #f5f8fa;
+}
+section .ul1{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}
+section .ul1 li{
+	width: 20%;
+}
+section .ul1 a{
+	display: flex;
+	justify-content: center;
+	font-size: 0.25rem;
+	line-height: 0.86rem;
+	width: 100%;
+	color: #333333;
+	position: relative;
+}
+section .ul1 li:nth-of-type(1) a i{
+	width: 100%;
+	height: 0.03rem;
+	background: #ff2741;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+section .ul1 .tb-a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10%;
+	height: 100%;
+	font-size: 0.50rem;
+	background: #fff;
+	border:0;
+}
+section .tb{
+	font-size: 0.40rem;
+	color: #b2b3b1;
+}
+section .ul2 li{
+	margin-top: 0.20rem;
+}
+section .ul2 img{
+	width: 100%;
+}
+/*底部*/
+footer{
+	height: 1.00rem;
+	border-top: 1px solid #aaaaad;
+	box-sizing: border-box;
+	width: 100%;
+}
+footer ul{
+	display: flex;
+	justify-content: space-between;
+}
+footer ul li{
+	width: 25%;	
+}
+footer a{
+	height: 1.00rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #cccccc;
+}
+#footer a i{
+	font-size: 0.40rem;
+}
+footer a span{
+	margin-top: 0.10rem;
+	font-size: 0.19rem;
+	color: #666666;
+}

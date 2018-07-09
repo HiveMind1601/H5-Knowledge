@@ -1,0 +1,125 @@
+/*重置样式*/
+html,body,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+	height: 100%;
+	font-size: 100px;
+}
+body{
+	height: 100%;
+	display: flex;
+	flex-direction:column;
+	font-size: 16px;
+}
+/*头部*/
+#header{
+	background: #fe2641;
+	height: 0.95rem;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #abadaf;
+}
+#header a{
+	color: #fff;
+	font-size:0.22rem;
+}
+#header a:nth-of-type(1){
+	display: flex;
+	align-self: center;
+	margin-top: 0.32rem;
+	font-weight: 900;
+}
+#header a:nth-of-type(1) img{
+	width: 0.22rem;
+	height: 0.13rem;
+}
+#header a:nth-of-type(2){
+	display: flex;
+	align-self: flex-end;
+	margin-bottom: 0.6rem;
+	margin-right: 0.32rem;
+}
+/*底部*/
+footer{
+	height: 1.00rem;
+}
+footer ul{
+	border-top:1px solid #aaaaad;
+	display: flex;
+	box-sizing: border-box;
+}
+footer li{
+	width: 25%;
+}
+footer li a{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: 1.00rem;
+}
+footer li a i{
+	display: block;
+	font-size: 0.40rem;
+	color: #ff2741;
+}
+footer li a span{
+	display: block;
+	font-size: 0.20rem;
+	color: #ff2741;
+}
+/*主体*/
+section{
+	flex: 1;
+	overflow: auto;
+	padding-top: 0.09rem;
+}
+section ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+section ul li{
+	width: 45%;
+	border: 1px solid #ccc;
+}
+section p{
+	margin-left: 0.16rem;
+}
+section .p1{
+	padding-top: 0.05rem;
+	font-size: 0.24rem;
+	color:#666666;
+	line-height: 0.40rem;
+}
+section .p2{
+	font-size: 0.20rem;
+	line-height: 0.32rem;
+	color: #adadad;
+	padding-bottom: 0.12rem;
+}
+section ul li img{
+	width: 100%;
+}
+section .p3{
+	font-size: 0.20rem;
+	display: flex;
+	justify-content: space-between;
+}
+section .p3 i{
+	color: #fe2641;
+}
+section .p3 span{
+	color: #9b9b9b;
+}
+section .p3-a2{
+	margin-right: 0.20rem;
+}
