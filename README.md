@@ -12,6 +12,8 @@
     2. [信易科技主页](https://hivemind1601.github.io/h5_knowlege/project/仿信易科技主页/html/demo.html)
     3. [名鞋库主页](https://hivemind1601.github.io/h5_knowlege/project/仿名鞋库主页/html/demo.html)
     4. [世纪佳缘登录页](https://hivemind1601.github.io/h5_knowlege/project/仿世纪佳缘登录页/html/demo.html)
+    5. [仿支付宝移动端页面](https://hivemind1601.github.io/h5_knowlege/project/仿支付宝移动端页面/html/demo.html)
+    6. [响应式布局页面](https://hivemind1601.github.io/h5_knowlege/project/响应式布局页面/html/demo.html)
 
 
 
