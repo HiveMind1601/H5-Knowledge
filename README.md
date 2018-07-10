@@ -14,6 +14,9 @@
     4. [世纪佳缘登录页](https://hivemind1601.github.io/h5_knowlege/project/仿世纪佳缘登录页/html/demo.html)
     5. [仿支付宝移动端页面](https://hivemind1601.github.io/h5_knowlege/project/仿支付宝移动端页面/html/demo.html)
     6. [响应式布局页面](https://hivemind1601.github.io/h5_knowlege/project/响应式布局页面/html/vj.html)
+    7. [宠爱3](https://hivemind1601.github.io/h5_knowlege/project/移动端页面练习/html/宠爱3.html)
+    8. [小红书1](https://hivemind1601.github.io/h5_knowlege/project/移动端页面练习/html/小红书1.html)
+    9. [小红书2](https://hivemind1601.github.io/h5_knowlege/project/移动端页面练习/html/小红书2.html)
 
 
 
