@@ -1,0 +1,183 @@
+html{
+	height: 100%;
+	font-size: 13.33vw;
+}
+body{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+/*头部*/
+header{
+	height: 0.94rem;
+	width: 100%;
+}
+header ul{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header ul li{
+	width: 16%;
+	display: flex;
+	justify-content: center;
+}
+header ul li a{
+	font-size: 0.3rem;
+	color: #000;
+}
+#header ul li:nth-of-type(6){
+	border-left: 1px solid #cfcfcf;
+	/*box-shadow: -2px 0 4px #d5d5d5;*/
+}
+#header li a i{
+	font-size: 0.3rem;
+	color: #000;
+}
+/*主体*/
+#section{
+	flex: 1;
+	overflow: auto;
+	background: #fbfbfb;
+	width:100%;
+}
+#section .top{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.15rem 0;
+}
+#section .top a{
+	margin-left: 0.35rem;
+	display: block;
+	color: #b7b7b7;
+}
+#section .top a i{
+	padding-right: 0.10rem;
+	font-size: 0.40rem;
+}
+#section form{
+	margin-left: 0.3rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 5rem;
+	height: 0.55rem;
+	background: #f2f3f7;
+	text-align: center;
+	border-radius: 0.1rem;
+}
+#section form a{
+	display:block;
+	margin-top: 0.1rem;
+	margin-left: 1.28rem;
+}
+#section form i{
+	font-size: 0.30rem;
+	color: #000;
+}
+#section form input{
+	width: 2.9rem;
+	height: 0.5rem;
+	line-height:0.5rem; 
+	font-size: 0.25rem;
+	border: 0;
+	outline: none;
+	background: #f2f3f7;
+	color: #a6a7a9;
+}
+#section .img{
+	width: 100%;
+}
+#section .img img{
+	width: 100%;
+}
+#section p{
+	width: 93.5%;
+	margin-left: 0.3rem;
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #ebebeb;
+	position: relative;
+}
+#section p span{
+	margin-left: 0.3rem;
+	font-size: 0.24rem;
+	color: #2c2c2c;
+}
+#section p .i1{
+	font-size: 0.3rem;
+	color: #f7463c;
+}
+#section p .i2{
+	position: absolute;
+	right: 0;
+	font-size: 0.3rem;
+	color: #a3a3a3;
+}
+#section .bottom{
+	margin-top: 0.2rem;
+	background:#ffffff;
+	width: 100%;
+}
+#section .bottom h2{
+	font-size: 0.3rem;
+	color: #000;
+	padding: 0.3rem 0;
+}
+#section .bottom ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#section .bottom ul li{
+	width: 48%;
+}
+#section .bottom ul img{
+	width: 100%;
+}
+#section .bottom p{
+	padding-top: 0.2rem;
+	font-size: 0.25rem;
+	line-height: 0.45rem;
+	color: #222222;
+	border: 0;
+}
+#section .bottom span{
+	font-size: 0.2rem;
+	color:#979797;
+	padding-left: 0.3rem;
+}
+/*底部*/
+footer{
+	height: 1rem;
+	border-top: 2px solid #f8f8f8;
+	box-sizing: border-box;
+	width: 100%;
+	background: #f5f4f1;
+}
+footer ul{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+footer ul li{
+	width: 20%;
+}
+footer ul li a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#footer ul li a i{
+	font-size: 0.4rem;
+	color: #222222;
+	padding-top: 0.08rem;
+}
+#footer ul li a span{
+	font-size: 0.18rem;
+	color: #222222;
+	padding: 0.06rem 0;
+}
