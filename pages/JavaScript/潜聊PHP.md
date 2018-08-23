@@ -59,6 +59,7 @@ echo USERNAME;
 2.object:对象
 
 两种特殊类型
+
 1.resource（资源）：资源是由专门的函数来建立和使用的，例如打开文件、数据连接、图形画布
     $fp=fopen('php.txt','r');//打开文件，r:read  w:write
     $fr=fread($fp, 30);
