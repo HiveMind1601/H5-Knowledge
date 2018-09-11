@@ -1,4 +1,5 @@
 ##Ajax
+
 1. ajax：异步的JavaScript和XML
 ```javascript
 常用数据接口：
