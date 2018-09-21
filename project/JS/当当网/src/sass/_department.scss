@@ -1,0 +1,96 @@
+@charset "utf-8";
+$d_height:40;
+.department{
+	width: 100%;
+	margin: 0 auto 20px;
+}
+.depart-top{
+	height: 42px;
+	line-height:24px;
+	.title{
+		float: left;
+		margin: 9px 0 7px;
+    	padding: 0 20px 0 6px;
+    	border-right: 1px solid #b7b7b7;
+		a{
+			font-size:$a_size+8px;
+	    	color: #323232;
+	    	font-weight:600;
+		}
+	}
+	ul{
+		float: left;
+		height: $d_height+px;
+	}
+	li{
+		float: left;
+		padding: 0 30px;
+	    margin: 13px 0 0 -13px;
+	    background: url(http://img63.ddimg.cn/upload_img/00111/home/title_bg.png) no-repeat right 3px;
+	    line-height:$d_height/2+px;
+	    a{
+	    	font-size: $a_size+4px;
+	    	color: #323232;
+	    	span{
+	    		font-size: $a_size;
+	    		padding-left: 5px;
+	    	}
+	    }
+	}	
+}
+.depart-middle{
+	border-top:1px solid $border_color;
+	border-left:1px solid $border_color;
+	div{
+		float: left;
+		a{
+			float: left;
+		}
+	}
+	.depart-middle-l{
+		width: 400px;
+		a{
+			border: 1px solid $border_color;
+			border-width: 0 1px 1px 0
+		}
+	}
+	.depart-middle-r{
+		@extend .depart-middle-l;
+	}
+	.depart-middle-m{
+		border-bottom:1px solid $border_color;
+		border-top:1px solid $border_color;
+		img{
+			display:block;
+		}
+	}
+}
+.depart-bottom{
+	height: $d_height+24px;
+    border: 1px solid $border_color;
+    border-top: 0;
+    background-color: #f7f7f7;
+    position: relative;
+    ul{
+    	width: 100%;
+    	position: absolute;
+	    bottom: 10px;
+	    left: 10px;
+    }
+	li{
+		float: left;
+		width: 118px;
+	    height: 44px;
+	    margin-left: -1px;
+	    border-left: 1px dashed #dfdfdf;
+	    a{
+		    display: block;
+		    width: 109px;
+		    height: 44px;
+		    margin-left: 4px;
+	    }
+	}
+	.first{
+		border-left:0;
+	}
+}

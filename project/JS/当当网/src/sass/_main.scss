@@ -1,0 +1,183 @@
+@charset "utf-8";
+$border_color:#e6e6e6;
+.time{
+	margin-bottom:30px;
+	.top{
+		height: 39px;
+	    border-bottom: 2px solid #3c3c3c;
+	    position: relative;
+	    .ms{
+	    	float: $left;
+	    	background: url(http://img63.ddimg.cn/upload_img/00111/home/home_miaosha.png) no-repeat 83px 0;
+	    	height: 39px;
+	    	padding-left:113px;
+	    	font-size:$a_size+2px;
+	    	a{
+				@include position();
+				width:83px;
+				height: 39px;
+		    }
+		    span{
+		    	float:left;
+		    	width:26px;
+		    	height: 24px;
+		    	line-height:24px;
+		    	padding:5px 11px 0 0;
+		    	text-align:center;
+		    }
+	    }
+	    ul{
+			position: absolute;
+			left: 305px;
+			top:0px;
+			li{
+				width: 80px;
+			    text-align: center;
+			    height: 38px;
+			    float: left;
+			    margin-right: 50px;
+			    a{
+			    	display: block;
+			    	width: 80px;
+			    	height: 38px;
+			    	line-height:38px;
+			    	text-align:center;
+			    	font-size:$a_size+8px;
+			    	font-weight:600;
+			    	color:#666;
+			    }
+			}
+	    }
+	}
+	.bottom{
+		border: 1px solid #e6e6e6;
+	    border-right: none;
+	    .hover{
+	    	border:1px solid red;
+	    }
+		li{
+			float: $left;
+		    width: 198px;
+		    height: 227px;
+		    border-right: 1px solid #e6e6e6;
+		    a{
+		    	display:block;
+		    	width: 150px;
+			    height: 150px;
+			    overflow: hidden;
+			    margin: 10px auto 0;
+		    }
+		    .name{
+		    	width: 180px;
+			    overflow: hidden;
+			    line-height: 22px;
+			    height: 22px;
+			    margin: 0 auto;
+			    padding-top: 15px;
+		    	span{
+		    		color: $a_color;
+		    		font-size:$a_size;
+		    	}
+		    	span:hover{
+			    	text-decoration:underline;
+			    	color:red;
+			    }
+		    }
+		    .price{
+		    	color: $num_color;
+			    width: 180px;
+			    margin: 2px auto 0;
+			    overflow: hidden;
+			    line-height: 20px;
+			    height: 20px;
+			    font-size:$a_size;
+			    span{
+					font-size: $a_size+4px;
+    				margin-left: 5px;
+			    }
+			    .del{
+					color: #969696;
+				    text-decoration: line-through;
+				    font-size: $a_size;
+			    }
+		    }
+		}
+	}
+}
+@mixin position($style:absolute, $left:0, $top:0) {
+    position: $style;
+    left: $left+px;
+    top: $top+px;
+}
+.quickly{
+	width: 100%;
+	
+	.pic{
+		@include position(relative);
+		height:40px;
+		.pic1{
+			@include position();
+		}
+		.pic2{
+			@include position(absolute,820,15);	
+		    width: 370px;
+		    height: 40px;
+		    color: #fa5c98;
+		    text-align: right;
+		    font-size:$a_size+2px;
+		}
+	}
+	.img{
+		height: 520px;
+		@include position(relative);
+		margin: 0 auto 30px;
+		border-left: 1px solid $border_color;
+    	border-top: 1px solid $border_color;
+		.img-l{
+			@include position();
+			width: 198px;
+    		height: 519px;
+    		border-right: 1px solid $border_color;
+    		border-bottom: 1px solid $border_color;
+    		
+		}
+		.img-l{
+			li{
+    			float:left;
+    			@include position(relative);
+    			a{
+    				display:block;
+    				width: 98px;
+	    			height: 119px;
+	    			border-right: 1px dotted $border_color;
+	    			border-bottom: 1px dotted $border_color;
+	    			background-color: #f9f9f9;
+    			}
+    			img{
+    				@include position(absolute,10,34);
+    			}
+    		}
+		}
+		.img-r{
+			@include position(absolute,199,0);
+			overflow:hidden;
+			li{
+				float:left;
+				width: 199px;
+			    overflow: hidden;
+			    border-right: 1px solid $border_color;
+			    border-bottom: 1px solid $border_color;
+			}
+			.border{
+				border: 3px solid #ff5797;
+    			width: 194px;
+    			height: 277px;
+			}
+			.border1{
+				border: 3px solid #ff5797;
+    			width: 194px;
+    			height: 232px;
+			}
+		}
+	}
+}

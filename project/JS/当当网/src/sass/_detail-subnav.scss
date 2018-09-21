@@ -1,0 +1,76 @@
+@charset "utf-8";
+$banner-subnav-ul:banner-subnav-ul;
+//二级导航
+.banner-nav{
+	position: relative;
+	ul{
+		width: 200px;
+		li{
+			height: 30px;
+			line-height:30px;
+		    padding-left: 18px; 
+		    position: relative;
+		    a{
+		    	color: #323232;
+		    	font-size: $a_size+2px;
+		    }
+		}
+		.banner-subnav{
+			display: none;
+			position: absolute;
+		    left: 199px;
+		    top: 0px;
+		    border: 2px solid $num_color;
+		    width: 979px;
+		    height: 480px;
+		    padding-left: 18px;
+		    overflow: hidden;
+		    font-size: $a_size;
+		    background-color: #fff;
+		    border-top: 0; 
+		    .banner-subnav-t{
+			    background: #fff;
+			    width: 100%;
+			    padding-top: 10px;
+			    a{
+			    	float: left;
+				    height: 20px;
+				    line-height: 20px;
+				    padding: 0 30px 0 8px;
+				    color: #fff;
+				    margin: 0 10px 3px 0;	
+				    background: #a2a2a2 url(http://img62.ddimg.cn/upload_img/00111/home/home_sprite_1511.png) no-repeat right -146px;
+			    }
+		    }
+		}
+	}
+	@for $i from 1 to 8{
+		.#{$banner-subnav-ul}-#{$i}{
+			width:979px;
+			li{
+				float:$left;
+				padding: 7px 10px 5px 5px;
+			    border-bottom: 1px dotted #d5d5d5;
+			    overflow: hidden;
+			    a{
+			    	padding-left:10px;
+			    	background: url(http://img62.ddimg.cn/upload_img/00111/home/home_sprite_1511.png) no-repeat left -30px;
+			    }
+			}
+			h3{
+				float:$left;
+				display: inline-block;
+				padding-right:30px;
+				margin-top:8px;
+			    font-weight: 600;
+			    height:40px;
+
+			    a{
+			    	color: $num_color;
+			    	font-size: $a_size+2px;
+			    	
+			    }
+			}
+		}
+	} 	
+}

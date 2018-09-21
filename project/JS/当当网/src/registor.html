@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新用户注册 - 当当网</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/registor.css">
+	<!-- <script type="text/javascript" src="script/jsmoduel/require.js" defer async="true" data-main="script/jsmoduel/all.js"></script> -->
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="top">
+		<div class="wrapper clear">
+			<div class="logo"> 
+				<a href="#">
+					<img src="https://login.dangdang.com/images/ddnewhead_logo.gif" alt="">
+				</a>
+			</div>
+			<div class="clear nav">
+				<ul class="top-r">
+					<li>
+						<a href="cart.html">
+							<i></i>					
+							<span>购物车</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">我的云书房</a>
+					</li>
+					<li>
+						<a href="#" class="subnav-btn">我的当当</a>					
+					</li>
+					<li>
+						<a href="#">小说投稿</a>
+					</li>
+					<li>
+						<a href="#">我要出书</a>
+					</li>
+					<li>
+						<a href="#" class="subnav-btn">企业采购</a>
+					</li>
+					<li>
+						<a href="#" class="subnav-btn">客户服务</a>
+					</li>
+				</ul>
+			</div>
+			<div class="log">
+				<span>欢迎光临当当网,&nbsp;请</span>
+				<a href="login.html">登录</a>
+				<a href="#">免费注册</a>
+			</div>
+		</div>
+	</div>
+	<!-- 表单 -->
+	<div id="box">
+		<div class="wrapper">
+			<div class="head clear">
+				<span>
+					<a href="index.html">当当首页</a>
+					<a href="#">注册帮助</a>
+				</span>	
+				<a href="#" class="reg">新用户注册</a>
+				<a href ="#" class="reg1">企业用户注册</a>
+			</div>
+			<div class="register">
+				<p>
+    				贴心提示：请勿设置与邮箱密码相同的账户登录密码或支付密码，防止不法分子窃取您的当当账户信息，
+					<a href ="#">谨防诈骗!</a>
+				</p>
+				<form class="commentForm" action="http://10.31.156.178/JS-1804/dangdang/php/registor.php" method="post">
+		            <p>
+		                <label for="username">手机号码</label>
+		                <input id="username" name="username" type="text">
+		                <span></span>
+		                <div>
+		                	<label id="username-error" class="error ts-1" for="username">手机号可用于登录、找回密码、接收订单通知等服务</label>
+		                </div>
+
+		            </p>
+		            <p>
+		                <label for="password">登陆密码</label>
+		                <input id="password" type="password" name="password">
+		                <span></span>
+		                <div>
+							<label id="password-error" class="error ts-2" for="password">请填写长度为6-20个字符的密码</label>
+		                </div>
+		            </p>
+		            <p>
+		                <label for="confirm">确认密码</label>
+		                <input id="confirm" type="password" name="confirm">
+		                <span></span>
+		                <div>
+							<label id="confirm-error" class="error ts-3" for="confirm">请再次输入密码</label>
+		                </div>
+		            </p>
+		            <p class="form-c">
+		                <input type="checkbox" checked="checked">
+		                我已阅读并同意
+						<a href="#">《当当交易条款》</a>	
+						和
+						<a href="#">《当当社区条款》</a>			
+		            </p>
+		            <p class="submit">
+		                <input type="submit" value="立即注册" name="submit">
+
+		            </p>			       
+    			</form>
+			</div>
+		</div>
+	</div>	
+	<!-- 底部  -->
+	<div id="footer">
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<div class="footer-bottom-t">
+					<a href="#">公司简介</a><span>|</span>
+					<a href="#">诚聘英才</a><span>|</span>
+					<a href="#">网站联盟</a><span>|</span>
+					<a href="#">当当招商</a><span>|</span>
+					<a href="#">机构销售</a><span>|</span>
+					<a href="#">手机当当</a><span>|</span>
+					<a href="#">官方Blog</a><span>|</span>
+				</div>
+				<div class="footer-bottom-m">
+					<p>
+						Copyright (C) 当当网 2004-2017, All Rights Reserved
+					</p>
+					<div class="message">
+						<span><a href="#">京ICP证041189号</a></span><span>|</span>
+						<span>出版物经营许可证 新出发京批字第直0673号</span><span>|</span>
+						<span>食品流通许可证：SP1101011010021855(1-1)</span><br>
+						<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span><span>|</span>
+						<span>京公网安备110101000001号</span><br>
+						<span>互联网违法和不良信息举报电话：4001066666-5 邮箱：<a href="#">service@cs.dangdang.com</a></span><br>
+						<span><a href="#">网络出版服务许可证（总）网出证（京）字第049号</a></span><span>
+						<a href="#">北京当当网信息技术有限公司</a>，公司地址：北京市朝阳区北三环东路8号静安中心21层</span>
+					</div>
+					<div class="img">
+						<div>
+							<a href="#" class="footer_img"><img src="http://img4.ddimg.cn/00012/2010/validate.gif"></a>
+						</div>				
+						<div>
+							<a href="#" class="footer_img"><img src="http://img61.ddimg.cn/7d593c48-48f6-4fc9-85e0-7d6e10dfc2a2.hpvgUvc9"></a>
+						</div>
+						<div>
+							<a id="_pingansec_bottomimagesmall_brand" href="#"><img src="http://img63.ddimg.cn/upload_img/00111/home/brand_128_47.png"></a>
+						</div>
+						<div style="width:182px;">
+							<a href="#"><img src="http://img60.ddimg.cn/upload_img/00459/home/hlwjbzx_182.png"></a>
+						</div>
+						<div>
+							<a href="#" alt="可信网站"><img src="http://img60.ddimg.cn/upload_img/00459/home/cnnic.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/thirdplugins/jquery.validate.min.js"></script>
+    <script src='script/js/registor.js'></script>
+</body>
+</html>

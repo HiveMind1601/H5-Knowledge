@@ -1,0 +1,136 @@
+@charset "utf-8";
+$spic_width:320;
+$spic_height:320;
+$sale_height:48;
+@mixin position($style:absolute, $left:0, $top:0) {
+    position: $style;
+    left: $left+px;
+    top: $top+px;
+}
+.banner-nav-ul{
+	display: none;
+}
+#main{
+	margin-top:30px;
+	padding-bottom:70px;
+	
+}
+.wrap {
+    width: $spic_width+px;
+    height: $spic_height+131px;
+    position: relative;
+    float:left;
+    padding: 0 20px 30px 20px;
+}
+#spic {
+    width: $spic_width+px;
+    height: $spic_height+px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+	    img {
+	    width: $spic_width+px;
+	    height:$spic_height+px;
+	}
+}
+#sf {
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    z-index:10;
+}
+#bf {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #fff;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    left: 330px;
+    z-index:10;
+    visibility: hidden;
+    img {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    width: 800px;
+    	height: 800px;
+	}
+}
+.sale{
+	width: $spic_width+px;
+	height: $sale_height+px;
+	overflow: hidden;
+	@include position(absolute,0,330);
+	img{
+		@include position();
+	}
+	p{
+	    @include position(absolute,30,0);
+	    height: $sale_height+px;
+	    line-height: $sale_height+px;
+	    font-size: $a_size+10px;
+	    color: #fff;
+	    font-weight: 600;
+	}
+}
+#ulist {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    width: $spic_width+px;
+    height: 56px;
+    overflow: hidden;
+    cursor: pointer;
+    a {
+	    float: left;
+	    width: 10px;
+	    height: 54px;
+	    text-decoration: none;
+	    line-height: 56px;
+	    text-align: center;
+	    background: #fff;
+	}
+    #right {
+	    position: absolute;
+	    right: 0px;
+	    top: 0px;
+	    color: #333;
+	    font-size:$a_size+2px;
+	    background: #969696 url(http://product.dangdang.com/images/product_sprites.png) no-repeat -18px 0;
+	}
+	#left {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    z-index: 2;
+	    color: #333;
+	    font-size:$a_size+2px;
+	    background: #969696 url(http://product.dangdang.com/images/product_sprites.png) no-repeat 0 0;
+	}
+}
+#list {
+    float: left;
+    margin-left: 18px;
+    width: 295px;
+    position: relative;
+    ul {
+	    list-style: none;
+	    float: left;
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    li {
+		    float: left;
+		    width: 56px;
+		    height: 56px;
+		    img {
+			    width: 54px;
+			    height: 54px;
+			}
+		}
+	}
+}

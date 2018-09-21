@@ -1,0 +1,301 @@
+@charset "utf-8";
+$banner-subnav-ul:banner-subnav-ul;
+#banner{
+	padding-bottom:20px;
+	height: 508px;
+	position: relative;
+}
+//二级导航
+.banner-nav{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	ul{
+		width: 200px;
+		li{
+			height: 30px;
+			line-height:30px;
+		    padding-left: 18px; 
+		    position: relative;
+		    a{
+		    	color: #323232;
+		    	font-size: $a_size+2px;
+		    }
+		}
+		.banner-subnav{
+			display: none;
+			position: absolute;
+		    left: 199px;
+		    top: -2px;
+		    border: 2px solid $num_color;
+		    width: 979px;
+		    height: 480px;
+		    padding-left: 18px;
+		    overflow: hidden;
+		    font-size: $a_size;
+		    background-color: #fff;
+		    .banner-subnav-t{
+			    background: #fff;
+			    width: 100%;
+			    padding-top: 10px;
+			    a{
+			    	float: left;
+				    height: 20px;
+				    line-height: 20px;
+				    padding: 0 30px 0 8px;
+				    color: #fff;
+				    margin: 0 10px 3px 0;	
+				    background: #a2a2a2 url(http://img62.ddimg.cn/upload_img/00111/home/home_sprite_1511.png) no-repeat right -146px;
+			    }
+		    }
+		}
+	}
+	@for $i from 1 to 8{
+		.#{$banner-subnav-ul}-#{$i}{
+			width:979px;
+			li{
+				float:$left;
+				padding: 7px 10px 5px 5px;
+			    border-bottom: 1px dotted #d5d5d5;
+			    overflow: hidden;
+			    a{
+			    	padding-left:10px;
+			    	background: url(http://img62.ddimg.cn/upload_img/00111/home/home_sprite_1511.png) no-repeat left -30px;
+			    }
+			}
+			h3{
+				float:$left;
+				display: inline-block;
+				padding-right:30px;
+				margin-top:8px;
+			    font-weight: 600;
+			    height:40px;
+
+			    a{
+			    	color: $num_color;
+			    	font-size: $a_size+2px;
+			    	
+			    }
+			}
+		}
+	} 	
+}
+//轮播图
+@mixin position($style:absolute, $left:0, $top:0) {
+    position: $style;
+    left: $left+px;
+    top: $top+px;
+}
+.wrapper{
+	@include position(relative);
+	.banner-pic-t{
+		@include position(absolute,0,0);
+	}
+}
+.banner-pic{
+	width: 768px;
+	height: 488px;
+	@include position(absolute,200,0);
+}
+.banner-pic-t{
+	width: 796px;
+	height: 326px;
+	ul{		
+		li{
+			@include position(absolute,1,0);
+			opacity:0;
+		}
+	}
+	ol{
+		@include position(absolute,280,290);
+		width: 220px;
+		li{
+			float:$left;
+			width: 20px;
+		    height: 20px;
+		    line-height:20px;
+		    font-size: $a_size;
+		    color: #fff;
+		    text-align: center;
+		    overflow: hidden;
+		    cursor: pointer;
+		    background-color: #646464;
+		    margin-right: 6px;
+		    border-radius: 10px;
+		}
+		.active{
+		    background-color:$num_color;
+		}
+	}
+	.t-left{
+		@include position(absolute,0,122);
+	    width: 33px;
+	    height: 70px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+28px;
+	    line-height: 70px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	}
+	.t-right{
+		@include position(absolute,763,122);
+		width: 33px;
+	    height: 70px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+28px;
+	    line-height: 70px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	}
+	.opacity{
+		opacity:1;
+		z-index:-1;
+	}
+}
+.banner-pic-b{
+	width: 796px;
+	height: 162px;
+	@include position(absolute,0,326);
+	ul{
+		@include position(absolute,0,0);
+		width: 796px;
+		opacity: 0;
+		li{
+			float:$left;	
+		}
+	}
+	.b-left{
+		@include position(absolute,0,79);
+	    width: 33px;
+	    height: 40px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+12px;
+	    text-align:center;
+	    line-height: 40px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	    z-index:100;
+	}
+	.b-right{
+		@include position(absolute,763,79);
+		width: 33px;
+	    height: 40px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+12px;
+	    text-align:center;
+	    line-height: 40px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	    z-index:100;
+	}
+}
+
+//tab切换
+.banner-right{
+	@include position(absolute,998,0);
+	.tabswitch{
+		border-top: 1px solid #e6e6e6;
+	    height: 29px;
+	    width: 204px;
+	    @include position(static);
+	    .abtn{
+	    	li{
+		    	margin-left: -1px;
+			    float: left;
+			    width: 101px;
+			    border: 1px solid #e6e6e6;
+			    border-top: 0;
+			    height: 28px;
+			    line-height:28px;
+			    background-color: #fff;
+			    cursor: pointer;
+			    font-size: $a_size+2px;
+			    text-align:center;
+			    color: #646464;
+			    overflow: hidden;
+	    	}
+	    }
+	    .tabcontent{
+	    	width: 202px;
+	    	header:136px;
+	    	position: relative;
+	    }
+	    .tabswitch-1{
+	    	@include position(absolute,0,0);
+	    	height: 130px;
+		    width: 202px;
+		    overflow: hidden;
+		    padding-top: 6px;
+		    li{
+		    	float:none;
+		    	border:0;
+		    	line-height: 25px;
+		    	text-align:left;
+			    padding-left: 20px;
+			    width: 183px;
+			    height: 25px;
+			    background: url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat 10px -188px
+		    }
+	    }
+	    .tabswitch-2{
+	    	@include position(absolute,0,0);
+	    	height: 130px;
+		    width: 202px;
+		    overflow: hidden;
+		    padding-top: 6px;
+		    li{
+		    	float:none;
+		    	border:0;
+		    	line-height: 25px;
+		    	text-align:left;
+			    padding-left: 20px;
+			    width: 183px;
+			    height: 25px;
+			    background: url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat 10px -188px;
+		    }
+	    }
+	}
+}
+//小轮播
+.banner-right-lunbo{
+	@include position(absolute,0,365);
+	width: 202px;
+    height: 119px;
+    overflow:hidden;
+	ul{
+		@include position(absolute,0,0);
+		width:606px;
+		li{
+			float:left;
+		}
+	}
+	.r-left{
+		@include position(absolute,0,45);
+	    width: 32px;
+	    height: 40px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+12px;
+	    text-align:center;
+	    line-height: 40px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	}
+	.r-right{
+		@include position(absolute,170,45);
+		width: 32px;
+	    height: 40px;
+	    overflow: hidden;
+	    background: #000 url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat;
+	    font-size: $a_size+12px;
+	    text-align:center;
+	    line-height: 40px;
+	    cursor: pointer;
+	    opacity: 0.3;
+	}
+}

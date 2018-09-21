@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+$wrapper_width:1200px;
+$left:left;
+$right:right;
+$a_color:#646464;
+$a_size:12px;
+$num_color:#ff2832;
+
+.wrapper{
+	width:$wrapper_width;
+	margin:0 auto;
+}
+
+.clear::after{
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+a{
+	text-decoration:none;
+	color:$a_color;
+	font-size:$a_size;
+}
+#top{
+	background:#f9f9f9;
+	height: 34px;
+}
+.top-l{
+	float:$left;
+}
+.top-m{
+	float:$right;
+}
+.top-r{
+	float: $right;
+}
+.top-r{
+	padding-top:2px;
+	li{
+		float:left;
+		position: relative;
+		height: 24px;
+	    padding-top: 4px;
+	    line-height: 24px;
+	    background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat left -285px;
+	    a{	
+	    	display: block;
+		    position: relative;
+		    line-height: 21px;
+		    padding: 0 7px 0 8px;
+	    	.num{
+	    		color:$num_color;
+	    	}
+		    i{
+		    	float: $left;
+		    	width: 15px;
+			    height: 14px;
+			    background: url(http://img63.ddimg.cn/upload_img/00459/home/home_sprite2.png) no-repeat -40px -86px;
+			    overflow: hidden;
+			    margin: 3px 9px 0 0;
+		    }
+	    }
+		li{
+			float:none;
+			background:none;
+		}
+		.subnav-btn{
+			padding-right: 27px;
+			background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat right -307px;
+		}
+		.subnav{
+			position: absolute;
+		    top: 21px;
+		    left: -1px;
+		    border: 1px solid #e6e6e6;
+		    border-top: none;
+		    background-color: #fff;
+		    padding: 4px 0;
+		    z-index:100;
+		    display: none;
+		}
+	}
+}
+.top-m{
+	padding: 5px 0 0 10px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    font-size:12px;
+    //color: $num_color;
+    a{
+    	margin-right:4px;
+    	color:$num_color;
+    }  
+}
+.top-l{
+	position: relative;
+	.address{
+		display: block;
+	    position: relative;
+	    line-height: 22px;
+	    height: 22px;
+	    background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat right -303px;
+	    padding: 4px 22px 0 9px;
+	}
+	ul{
+		position: absolute;
+	    top: 27px;
+	    left: 0px;
+	    border: 1px solid #e6e6e6;
+	    background-color: #fff;
+	    padding: 10px 0 10px 10px;
+	    width: 298px;
+	    z-index: 100;
+	    display: none;
+	    li{
+	    	background: none;
+		    float: left;
+		    width: 48px;
+		    height: 26px;
+		    line-height: 26px;
+		    padding: 0 0 0 10px;
+	    }
+	}
+}
+#header{
+	height: 143px;
+	.header-top{
+		position: relative;
+		height: 100px;
+		.logo{
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    overflow: hidden;
+		}
+		form{
+			position: absolute;
+		    margin-top: 20px;
+		    height: 48px;
+		    left: 362px;
+		    top: 0;
+		    input{
+		    	width: 398px;
+			    height: 18px;
+			    border: 2px solid $num_color;
+			    border-right: none;
+			    padding: 9px 0 9px 10px;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    color: #323232;
+			    font-size:$a_size;
+			    outline: 0;
+			    background: none;
+		    }
+		    .subnav-btn-all{
+		    	position: absolute;
+			    top: 0px;
+			    left: 410px;
+			    border: 2px solid $num_color;
+			    border-left: 0px solid #dedede;
+			    width: 92px;
+			    height: 36px;
+			    line-height:36px;
+			    font-size:16px;
+			    color: #969696;
+			    padding: 0 0 0 14px;
+			    cursor: pointer;
+			    background-color: #f6f6f6
+		    }
+		    .search-btn{
+		    	width: 48px;
+			    height: 40px;
+			    border: none;
+			    background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 0 -346px;
+			    cursor: pointer;
+			    position: absolute;
+			    left: 517px;
+			    top: 0;
+		    }
+		}
+		.form-bottom{
+			position: absolute;
+		    top: 65px;
+		    left: 362px;
+		    color: #969696;
+		    width: 565px;
+		    line-height: 20px;
+		    font-size:$a_size;
+		    .form-bottom-l{
+		    	float: $left;
+		    	a{
+					margin-left:5px;
+		    		margin-right:10px;
+		    		color:#969696;
+		    	}
+		    }
+		    .form-bottom-r{
+		    	float:$right;
+		    	color:#969696;
+		    }
+		}
+		.header-top-right{
+			float:$right;
+			position: absolute;
+			top:20px;
+			right:0px;
+			.cart{
+				float: $left;
+				width:107px;
+				height:36px;
+				line-height:36px;
+				border:2px solid $num_color;
+				background: url(http://img62.ddimg.cn/upload_img/00459/home/icon_cart.png) 5px 0 no-repeat $num_color;
+				a{
+					padding-left: 35px;
+					font-size:$a_size+2px;
+					color:#fff;
+				}
+				span{
+					color:#fff;
+					font-weight:600;
+					font-size:$a_size+2px;
+				}
+			}
+			.order{
+				float:$left;
+				width: 86px;
+				height:36px;
+				line-height:36px;
+			    text-align: center;
+			    font-size:$a_size+2px;
+			    background-color: #f6f6f6;
+			    border: 2px solid #dcdcdc;
+			}
+		}
+	}
+	.subnav-btn-all{
+		i{
+			width: 13px;
+		    height: 7px;
+		    background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat -14px -90px;
+		    position: absolute;
+		    left: 88px;
+		    top: 16px;
+		}
+		ul{
+			//display: none;
+			z-index:100;
+			width: 104px;
+		    height: 288px;
+		    border: 1px solid #dedede;
+		    position: absolute;
+		    top: 36px;
+		    left: 0px;
+		    background-color: #fff;
+		    overflow: auto;
+		    li{
+		    	height: 24px;
+		    	line-height:24px;
+	    		padding: 0 5px 0 15px;
+		    }
+		}
+	}
+	.header-bottom{
+		.nav{
+			height: 40px;
+    		border-bottom: 3px solid $num_color;
+    		li{
+    			float:$left;
+    			a{
+    				color: #323232;
+				    font-size:$a_size+2px;
+				    padding: 0 15px;
+				    display: block;
+				    height: 40px;
+				    line-height:40px;
+				    font-weight: 600;
+    			}
+    		}
+    		.all{
+    			width: 200px;
+			    margin-right: 17px;
+			    text-align: left;
+			    background: #ff2832;
+			    position: relative;
+			    a{
+			    	display: block;
+			    	height: 40px;
+			    	line-height:40px;
+			    	padding: 0 0 0 20px;
+				    display: block;
+				    width: 171px;
+				    background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 161px -567px;
+				    color: #fff;
+				    font-size:$a_size+2px;
+				    font-weight:600;
+			    }
+    		}
+		}
+	}
+}
+.on{
+	background: #fff;
+    color: #F07828;
+    z-index: 10;
+    margin: -2px -1px -2px 0;
+    padding: 0 1px 0 16px;
+    border: 2px solid #ff2832;
+    border-right: 0;
+}
+.zd{
+	width: 2px;
+	height:30px;
+	background:#fff;
+	position: absolute;
+	right:-2px;
+	top:0;
+	display:none;
+	z-index:999999;
+}

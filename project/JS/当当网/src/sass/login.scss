@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import "footer";
+$wrapper_width:1200px;
+$a_color:#646464;
+$a_size:12px;
+
+@mixin position-r($style:absolute,$right: 0,$top: 0){
+	position:$style;
+	right:$right+px;
+	top:$top+px;
+}
+.wrapper{
+	width:$wrapper_width;
+	margin:0 auto;
+	.fn{
+		height: 60px;
+	}
+}
+//头部
+#header{
+	height: 60px;
+	margin: 12px auto 14px;
+
+	img{
+		float: left;
+    	margin: 7px 0 0 0;
+	}
+	.login{
+		float: right;
+	    margin-top: 34px;
+	}
+	span{
+    	display: inline-block;
+	    width: 15px;
+	    height: 19px;
+	    background: url(https://login.dangdang.com/images/improve.png) no-repeat 0 0;
+	    vertical-align: middle;
+    }
+}
+a{
+	text-decoration:none;
+	color:$a_color;
+	font-size:$a_size;
+}
+//主体
+#login{
+	position: relative;
+	overflow: hidden;
+	height: 592px;
+	border-bottom:1px solid #ebebeb;
+	img{
+		position: absolute;
+		left:-350px;
+		top: 0;
+	}
+}
+.login-w{
+	background: #fff;
+    padding: 15px 25px 15px 15px;
+    width: 320px;
+    color: #6e6e6e;
+    margin: 90px auto 0;
+    @include position-r(absolute,350,0);
+    border: 1px solid #eef2f4;
+    box-shadow: 0px 1px 2px #eee;
+}
+.login-w-t{
+	font-size:$a_size;
+	width: 338px;
+	line-height: $a_size*2;
+    color: #828282;
+    padding-left: $a_size+10px;
+    background: url(https://login.dangdang.com/images/new_tip.png) 3px 5px no-repeat #fef7f5;
+    border: 1px solid #fedbd1;
+    @include position-r(absolute,0,-28);
+    a{
+    	color:#1a66b3;
+    }
+}
+.login-u{
+	p{
+		font-size: $a_size+6px;
+	    color: #3c3c3c;
+	    margin-top: 5px;
+	}
+	div{
+		margin-top: 20px;
+		height: 36px;
+	    border: 1px solid #e6e6e6;
+	    width: 310px;
+	    border-radius: 2px;
+	    position: relative;
+	    span{
+	    	width: 30px;
+		    margin-right: 10px;
+		    height: 36px;
+		    float: left;
+		    background: url(https://login.dangdang.com/images/icon_20150706.png) 10px -110px no-repeat;
+	    }
+	    input{
+	    	float: left;
+	    	width: 270px;
+		    height: 34px;
+		    line-height: 34px;
+		    border: 0;
+		    color: #333;
+		    outline: none;
+	    }
+	}
+}
+.login-ts{
+	height: 30px;
+    line-height: 30px;
+    font-size:$a_size;
+    padding:5px 0 5px 10px;
+}
+.login-p{
+	height: 36px;
+    border: 1px solid #e6e6e6;
+    width: 310px;
+    border-radius: 2px;
+    position: relative;
+    span{
+    	width: 30px;
+	    margin-right: 10px;
+	    height: 36px;
+	    float: left;
+	    background: url(https://login.dangdang.com/images/icon_20150706.png) 10px -150px no-repeat;
+    }
+    input{
+    	float: left;
+    	width: 270px;
+	    height: 34px;
+	    line-height: 34px;
+	    border: 0;
+	    color: #333;
+	    outline: none;
+    }
+}
+.login-gx{
+	font-size:$a_size;
+	width: 310px;
+    height: 27px;
+    line-height: 22px;
+    padding-top: 7px
+	input{
+		vertical-align: middle;
+    	margin-top: -1px;
+	}
+	.hide{
+		display: none;
+	}
+	a{
+		float:right;
+		color: #1a66b3;
+	}
+}
+.submit{
+	padding-top:5px;
+	input{
+		display: block;
+		width: 311px;
+		height:44px;
+		width: 100%;
+	    border-radius: 5px;
+	    color: #fff;
+	    height: 44px;
+	    line-height:44px;
+	    text-align: center;
+	    font-size:$a_size+8px;
+	    background: #ff2832;
+	    outline:none;
+	    border:0;
+	    cursor:pointer;
+	}
+}
+.register{
+	font-size:$a_size;
+	height: $a_size*2;
+    line-height: $a_size*2;
+    padding-top: $a_size/2;
+    span{
+    	float:right;
+    }
+}
+#t-iframe{
+	width: 100%;
+	height: 100%;
+	z-index:100;
+	position: fixed;
+    top: 0;
+    left: 0;
+}
+.bg{
+	@extend #t-iframe;
+	background:#000;
+	opacity: 0.1;
+	border:0;
+}
+.iframe{
+	width: 492px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-left: -246px;
+    margin-top: -141px; 
+    padding-bottom: 30px;
+    border: 1px solid #E6E6E6;
+    font-size: $a_size;
+    color: $a_color;
+    background-color: #fff;
+    z-index:999;
+	h3{
+		text-align: center;
+	    height: 40px;
+	    line-height: 40px;
+	    font-size: $a_size+2px;
+	    background-color: #F5F5F5;
+	    color:#000;
+	}
+	.content{
+		padding: 16px 15px 0 20px;
+	    line-height: $a_size*2;
+	    font-size: $a_size;
+	    span{
+		    width: 435px;
+		    padding-left: 5px;
+		    b{
+		    	color: #ff2832;
+    			font-weight: 600;
+		    }
+	    }
+	}
+	.btn-box{
+    	margin: 25px auto 0;
+	    height: 24px;	
+	    a{
+	    	margin:0 auto;
+	    	display: block;
+	    	width: 36px;
+		    color: #fff;
+		    height: 24px;
+		    line-height: 24px;
+		    background-color: #FF2832;
+		    padding: 0 10px;
+		    border-radius: 3px;
+	    }
+    }
+
+}

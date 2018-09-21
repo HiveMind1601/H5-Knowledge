@@ -1,0 +1,301 @@
+.footer-top {
+  width: 100%;
+  background: #fafafa;
+  border-bottom: 1px solid #ebebeb; }
+.footer-top ul {
+  width: 940px;
+  margin: 0 auto;
+  height: 68px;
+  padding: 5px 0 5px 30px; }
+.footer-top ul li {
+  float: left; }
+.footer-top ul a {
+  display: block;
+  height: 52px;
+  width: 187px;
+  padding: 7px 0 7px 48px; }
+.footer-top ul a span {
+  text-indent: -9999px;
+  display: block;
+  width: 138px;
+  height: 52px;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer; }
+.footer-top ul a .span-1 {
+  background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) no-repeat 0 0; }
+.footer-top ul a .span-2 {
+  background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) no-repeat 0 -52px; }
+.footer-top ul a .span-3 {
+  background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) no-repeat 0 -104px; }
+.footer-top ul a .span-4 {
+  background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) no-repeat 0 -156px; }
+
+.footer-middle {
+  width: 920px;
+  height: 140px;
+  margin: 0 auto;
+  padding-top: 30px; }
+.footer-middle ul {
+  width: 154px;
+  float: left;
+  text-align: center; }
+.footer-middle ul h3 {
+  padding-left: 30px;
+  height: 36px;
+  line-height: 36px; }
+.footer-middle ul h3 a {
+  font-size: 14px;
+  color: #323232; }
+.footer-middle ul li {
+  line-height: 20px;
+  height: 20px;
+  padding-left: 30px; }
+.footer-middle ul li a {
+  color: #7d7d7d; }
+
+.footer-bottom {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  padding: 17px 0 50px; }
+.footer-bottom .footer-bottom-t {
+  text-align: center;
+  padding-bottom: 17px; }
+.footer-bottom .footer-bottom-t a {
+  color: #8c8c8c; }
+.footer-bottom .footer-bottom-t span {
+  margin: 0 17px 0 19px;
+  color: #8c8c8c; }
+.footer-bottom .footer-bottom-m {
+  padding-top: 17px;
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 12px; }
+.footer-bottom .footer-bottom-m .message {
+  line-height: 20px;
+  padding-top: 10px; }
+.footer-bottom .footer-bottom-m .img {
+  padding: 10px 0 0 20px;
+  width: 975px;
+  margin: 0 auto;
+  height: 77px; }
+.footer-bottom .footer-bottom-m .img div {
+  float: left;
+  padding: 15px 25px 15px;
+  width: 135px;
+  height: 47px; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+.wrapper .fn {
+  height: 60px; }
+
+#header {
+  height: 60px;
+  margin: 12px auto 14px; }
+#header img {
+  float: left;
+  margin: 7px 0 0 0; }
+#header .login {
+  float: right;
+  margin-top: 34px; }
+#header span {
+  display: inline-block;
+  width: 15px;
+  height: 19px;
+  background: url(https://login.dangdang.com/images/improve.png) no-repeat 0 0;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #646464;
+  font-size: 12px; }
+
+#login {
+  position: relative;
+  overflow: hidden;
+  height: 592px;
+  border-bottom: 1px solid #ebebeb; }
+#login img {
+  position: absolute;
+  left: -350px;
+  top: 0; }
+
+.login-w {
+  background: #fff;
+  padding: 15px 25px 15px 15px;
+  width: 320px;
+  color: #6e6e6e;
+  margin: 90px auto 0;
+  position: absolute;
+  right: 350px;
+  top: 0px;
+  border: 1px solid #eef2f4;
+  box-shadow: 0px 1px 2px #eee; }
+
+.login-w-t {
+  font-size: 12px;
+  width: 338px;
+  line-height: 24px;
+  color: #828282;
+  padding-left: 22px;
+  background: url(https://login.dangdang.com/images/new_tip.png) 3px 5px no-repeat #fef7f5;
+  border: 1px solid #fedbd1;
+  position: absolute;
+  right: 0px;
+  top: -28px; }
+.login-w-t a {
+  color: #1a66b3; }
+
+.login-u p {
+  font-size: 18px;
+  color: #3c3c3c;
+  margin-top: 5px; }
+.login-u div {
+  margin-top: 20px;
+  height: 36px;
+  border: 1px solid #e6e6e6;
+  width: 310px;
+  border-radius: 2px;
+  position: relative; }
+.login-u div span {
+  width: 30px;
+  margin-right: 10px;
+  height: 36px;
+  float: left;
+  background: url(https://login.dangdang.com/images/icon_20150706.png) 10px -110px no-repeat; }
+.login-u div input {
+  float: left;
+  width: 270px;
+  height: 34px;
+  line-height: 34px;
+  border: 0;
+  color: #333;
+  outline: none; }
+
+.login-ts {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 5px 0 5px 10px; }
+
+.login-p {
+  height: 36px;
+  border: 1px solid #e6e6e6;
+  width: 310px;
+  border-radius: 2px;
+  position: relative; }
+.login-p span {
+  width: 30px;
+  margin-right: 10px;
+  height: 36px;
+  float: left;
+  background: url(https://login.dangdang.com/images/icon_20150706.png) 10px -150px no-repeat; }
+.login-p input {
+  float: left;
+  width: 270px;
+  height: 34px;
+  line-height: 34px;
+  border: 0;
+  color: #333;
+  outline: none; }
+
+.login-gx {
+  font-size: 12px;
+  width: 310px;
+  height: 27px;
+  line-height: 22px;
+  padding-top: 7px input;
+  padding-top-vertical-align: middle;
+  padding-top-margin-top: -1px; }
+.login-gx .hide {
+  display: none; }
+.login-gx a {
+  float: right;
+  color: #1a66b3; }
+
+.submit {
+  padding-top: 5px; }
+.submit input {
+  display: block;
+  width: 311px;
+  height: 44px;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+  background: #ff2832;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+.register {
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  padding-top: 6px; }
+.register span {
+  float: right; }
+
+#t-iframe, .bg {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.bg {
+  background: #000;
+  opacity: 0.1;
+  border: 0; }
+
+.iframe {
+  width: 492px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -246px;
+  margin-top: -141px;
+  padding-bottom: 30px;
+  border: 1px solid #E6E6E6;
+  font-size: 12px;
+  color: #646464;
+  background-color: #fff;
+  z-index: 999; }
+.iframe h3 {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: #F5F5F5;
+  color: #000; }
+.iframe .content {
+  padding: 16px 15px 0 20px;
+  line-height: 24px;
+  font-size: 12px; }
+.iframe .content span {
+  width: 435px;
+  padding-left: 5px; }
+.iframe .content span b {
+  color: #ff2832;
+  font-weight: 600; }
+.iframe .btn-box {
+  margin: 25px auto 0;
+  height: 24px; }
+.iframe .btn-box a {
+  margin: 0 auto;
+  display: block;
+  width: 36px;
+  color: #fff;
+  height: 24px;
+  line-height: 24px;
+  background-color: #FF2832;
+  padding: 0 10px;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=login.css.map */

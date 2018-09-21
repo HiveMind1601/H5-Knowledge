@@ -1,0 +1,92 @@
+@charset "utf-8";
+$small-btn:small-btn;
+$doc-left:doc-left;
+#doc-right{
+	@include position-r();
+    width: 34px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    z-index:999;
+    background: url(http://img63.ddimg.cn/upload_img/00446/111/bg_sidebar.png) repeat-y 0 0;
+    .sale{
+    	@include position-r(fixed,0,0);
+	    width: 34px;
+	    height: 135px
+    }
+    .small-btn{
+    	a{
+		    font-size:$a_size;
+		    line-height:$a_size+22px;
+		    color: #fff;
+		    display: block;
+		    width: 34px;
+		    height: 34px;
+		    text-indent:-9999px;
+    	}
+    	@for $i from 1 to 6{
+    		.#{$small-btn}-#{$i}{
+    			background: url(http://img61.ddimg.cn/upload_img/00111/home/sidebar_icon_1x.png) no-repeat 0 -35*($i - 1)+px;
+		    	@include position-r(fixed,0,135+(($i - 1)*34));
+    		}
+    	}
+    }
+    .small-btn-1{
+    	a{
+		    font-size:$a_size;
+		    line-height:$a_size+22px;
+		    color: #fff;
+		    display: block;
+		    width: 34px;
+		    height: 34px;
+		    text-indent:-9999px;
+    	}
+    	@for $i from 1 to 5{
+    		.#{$small-btn}-#{$i}{
+    			background: url(http://img61.ddimg.cn/upload_img/00111/home/sidebar_icon_1x.png) no-repeat 0 -35*($i+3)+px;
+		    	@include position-r(fixed,0,750+(($i - 1)*34));
+    		}
+    	}
+    }
+}
+#doc-left{
+	display: none;
+	left: 50%;
+    margin-left: -638px;
+    position: fixed;
+    bottom: 30px;
+    overflow: hidden;
+    ul{
+    	width: 38px;
+	    position: relative;
+	    z-index: 10;
+	    overflow: hidden;
+	    margin: 0;
+	    padding: 0;
+	    li{
+	    	height: 40px;
+		    line-height: 40px;
+		    @include position(relative);
+		    background-color: #f6f6f6;
+		    width: 38px;
+		    overflow: hidden;
+		    a{
+		    	overflow: hidden;
+		    	display: block;
+			    font-size: $a_size+2px;
+			    color: #fff;
+			    padding-left: 38px;
+			    height: 40px;
+		    }
+		    @for $i from 1 to 6{
+	    		.#{$doc-left}-#{$i}{
+	    			background: url(http://img61.ddimg.cn/upload_img/00111/home/fix_box_icon_161205.png) no-repeat 0 -38*($i - 1)+px;
+			    	//@include position-r(fixed,0,135+(($i - 1)*38));
+	    		}
+	    	}
+	    }
+	    .docactive{
+			background-color:#93d46f; 
+	    }
+    }
+}
