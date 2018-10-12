@@ -1,0 +1,23 @@
+{
+  "name": "cmsapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "supervisor ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.15",
+    "mongoose-materialized": "^0.2.0",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.0",
+    "multiparty": "^4.2.1"
+  }
+}
