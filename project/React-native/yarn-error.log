@@ -1,0 +1,41 @@
+Arguments: 
+  E:\Software\Node.js\node.exe E:\Software\yarn\bin\yarn.js add faker lodash
+
+PATH: 
+  C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\Software\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.7\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Software\TortoiseSVN\bin;E:\Software\svn\bin;E:\Software\Node.js\;C:\Program Files\Microsoft VS Code\bin;E:\Software\yarn\bin\;E:\Software\sass\Ruby23-x64\bin;C:\Users\Azzlz\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Azzlz\AppData\Local\Programs\Python\Python36-32\;C:\Users\Azzlz\AppData\Local\Microsoft\WindowsApps;C:\Users\Azzlz\AppData\Roaming\npm;C:\Users\Azzlz\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\train\Frame\React-Native\cms\node_modules\deep-extend\lib'
+
+npm manifest: 
+  {
+    "name": "empty-project-template",
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^30.0.1",
+      "react": "16.3.1",
+      "react-native": "e://train/Frame/React-Native/react-native-sdk-30.0.0.tar.gz"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
